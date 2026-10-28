@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/root"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:layoutDirection="rtl">
+    <ImageView android:id="@+id/bgimg" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:src="@drawable/wbg_shape"/>
+    <ImageView android:id="@+id/ring" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:src="@drawable/wring_shape"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="horizontal" android:layoutDirection="rtl" android:padding="3dp">
+        <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1.5dp">
+            <ImageView android:id="@+id/rh1" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:src="@drawable/wbox_shape" android:visibility="invisible"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center">
+                <TextView android:id="@+id/rn1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="11sp" android:textStyle="bold" android:maxLines="1" android:includeFontPadding="false"/>
+                <TextView android:id="@+id/rt1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="9.5sp" android:maxLines="1" android:includeFontPadding="false" android:layout_marginTop="1dp"/>
+                <Chronometer android:id="@+id/rc1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="10.5sp" android:textStyle="bold" android:visibility="gone" android:includeFontPadding="false" android:layout_marginTop="1dp"/>
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1.5dp">
+            <ImageView android:id="@+id/rh2" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:src="@drawable/wbox_shape" android:visibility="invisible"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center">
+                <TextView android:id="@+id/rn2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="11sp" android:textStyle="bold" android:maxLines="1" android:includeFontPadding="false"/>
+                <TextView android:id="@+id/rt2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="9.5sp" android:maxLines="1" android:includeFontPadding="false" android:layout_marginTop="1dp"/>
+                <Chronometer android:id="@+id/rc2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="10.5sp" android:textStyle="bold" android:visibility="gone" android:includeFontPadding="false" android:layout_marginTop="1dp"/>
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1.5dp">
+            <ImageView android:id="@+id/rh3" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:src="@drawable/wbox_shape" android:visibility="invisible"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center">
+                <TextView android:id="@+id/rn3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="11sp" android:textStyle="bold" android:maxLines="1" android:includeFontPadding="false"/>
+                <TextView android:id="@+id/rt3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="9.5sp" android:maxLines="1" android:includeFontPadding="false" android:layout_marginTop="1dp"/>
+                <Chronometer android:id="@+id/rc3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="10.5sp" android:textStyle="bold" android:visibility="gone" android:includeFontPadding="false" android:layout_marginTop="1dp"/>
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1.5dp">
+            <ImageView android:id="@+id/rh4" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:src="@drawable/wbox_shape" android:visibility="invisible"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center">
+                <TextView android:id="@+id/rn4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="11sp" android:textStyle="bold" android:maxLines="1" android:includeFontPadding="false"/>
+                <TextView android:id="@+id/rt4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="9.5sp" android:maxLines="1" android:includeFontPadding="false" android:layout_marginTop="1dp"/>
+                <Chronometer android:id="@+id/rc4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="10.5sp" android:textStyle="bold" android:visibility="gone" android:includeFontPadding="false" android:layout_marginTop="1dp"/>
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1.5dp">
+            <ImageView android:id="@+id/rh5" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:src="@drawable/wbox_shape" android:visibility="invisible"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center">
+                <TextView android:id="@+id/rn5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="11sp" android:textStyle="bold" android:maxLines="1" android:includeFontPadding="false"/>
+                <TextView android:id="@+id/rt5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="9.5sp" android:maxLines="1" android:includeFontPadding="false" android:layout_marginTop="1dp"/>
+                <Chronometer android:id="@+id/rc5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="10.5sp" android:textStyle="bold" android:visibility="gone" android:includeFontPadding="false" android:layout_marginTop="1dp"/>
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_margin="1.5dp">
+            <ImageView android:id="@+id/rh6" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:src="@drawable/wbox_shape" android:visibility="invisible"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center">
+                <TextView android:id="@+id/rn6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="11sp" android:textStyle="bold" android:maxLines="1" android:includeFontPadding="false"/>
+                <TextView android:id="@+id/rt6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="9.5sp" android:maxLines="1" android:includeFontPadding="false" android:layout_marginTop="1dp"/>
+                <Chronometer android:id="@+id/rc6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="10.5sp" android:textStyle="bold" android:visibility="gone" android:includeFontPadding="false" android:layout_marginTop="1dp"/>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>
