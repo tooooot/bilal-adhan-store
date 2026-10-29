@@ -67,9 +67,7 @@ public class AdhanService extends Service {
         } catch (Exception ignored) {}
         try { if (mp != null) { mp.stop(); mp.release(); mp = null; } } catch (Exception ignored) {}   // تجربة متكررة: لا نتركه يتداخل
         try {
-            String snd = Store.sound(this), fj = Store.fajrSound(this);   // الفجر: أذان فيه «الصلاة خير من النوم» إن وُجد
-            if ("fajr".equals(key) && !fj.isEmpty() && getResources().getIdentifier(fj, "raw", getPackageName()) != 0) snd = fj;
-            int res = getResources().getIdentifier(snd, "raw", getPackageName());
+            int res = getResources().getIdentifier(Store.sound(this), "raw", getPackageName());
             if (res == 0) res = getResources().getIdentifier("takbir_aaqib", "raw", getPackageName());
             AudioAttributes aa = new AudioAttributes.Builder().setUsage(AudioAttributes.USAGE_ALARM)
                 .setContentType(AudioAttributes.CONTENT_TYPE_MUSIC).build();
@@ -79,7 +77,7 @@ public class AdhanService extends Service {
             mp.setOnCompletionListener(m -> finish(sMin > 0 ? new long[]{fireT, sMin} : null));
             mp.setOnErrorListener((m, w, e) -> { android.util.Log.e("Adhan", "MediaPlayer error " + w + "/" + e); finish(sMin > 0 ? new long[]{fireT, sMin} : null); return true; });
             mp.start();
-            android.util.Log.i("Adhan", "playing " + snd + " res=" + res + " dur=" + mp.getDuration());
+            android.util.Log.i("Adhan", "playing " + Store.sound(this) + " res=" + res + " dur=" + mp.getDuration());
         } catch (Exception e) {
             android.util.Log.e("Adhan", "playback failed", e);
             finish(sMin > 0 ? new long[]{fireT, sMin} : null);

@@ -15,7 +15,6 @@ final class Store {
         try { return new JSONArray(sp(c).getString("items", "[]")); } catch (Exception e) { return new JSONArray(); }
     }
     static void saveItems(Context c, String json) { sp(c).edit().putString("items", json).apply(); }
-    static String fajrSound(Context c) { return sp(c).getString("fajrSound", ""); }
     static String sound(Context c) { return sp(c).getString("sound", "takbir_haram"); }
     static String theme(Context c) { return sp(c).getString("theme", "auto"); }
 

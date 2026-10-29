@@ -22,7 +22,6 @@ public class BilalPlugin extends Plugin {
         Context c = getContext();
         Store.saveItems(c, call.getArray("items").toString());
         Store.sp(c).edit().putString("sound", call.getString("sound", "takbir_haram"))
-            .putString("fajrSound", call.getString("fajrSound", ""))
             .putString("theme", call.getString("theme", "auto"))
             .putString("wbg", call.getString("wbg", "")).putString("wfg", call.getString("wfg", "")).putString("wacc", call.getString("wacc", ""))
             .putInt("walpha", call.getInt("walpha", -1))
